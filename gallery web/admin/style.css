@@ -1,0 +1,149 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #c4c4c4;
+}
+header {
+    background-color: #333;
+    padding: 20px;
+    position: relative;
+    color: white;
+}
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.center-title {
+    font-size: 24px;
+    margin: 0;
+    flex-grow: 1;
+    text-align: center;
+}
+.logout-btn {
+    background-color: #c5c5c5;
+    padding: 8px 14px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: background-color 0.3s;
+    color: rgb(39, 39, 39);
+}
+.logout-btn:hover {
+    background-color: #c0392b;
+}
+
+form {
+    background: white;
+    padding: 20px;
+    margin: 0 auto 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    max-width: 700px;
+    width: 100%; /* important */
+}
+
+input, textarea, button {
+    width: 100%; /* ensures it stays within the form */
+    box-sizing: border-box;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    align-items: stretch; /* ensures items stretch equally */
+}
+
+.item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+}
+img {
+    width: 100%;
+    height: 200px; /* fixed height */
+    object-fit: cover; /* crop the image to fit while preserving aspect ratio */
+    border-radius: 8px;
+}
+.button-group {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.nav-buttons {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.viewer-btn {
+    background-color: #3498db;
+    padding: 8px 14px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14px;
+    color: white;
+    transition: background-color 0.3s;
+}
+.viewer-btn:hover {
+    background-color: #0f4d77;
+}
+
+
+
+.item {
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    text-align: center;
+    height: 100%; /* critical: ensures equal height */
+    box-sizing: border-box;
+}
+
+
+.admin-actions {
+    margin-top: auto;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 15px;
+}
+
+.edit-btn, .delete-btn {
+    font-size: 14px;
+    padding: 8px 12px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    color: white;
+}
+
+.edit-btn {
+    background-color: #3498db;
+}
+.edit-btn:hover {
+    background-color: #2980b9;
+}
+
+.delete-btn {
+    background-color: #e74c3c;
+}
+.delete-btn:hover {
+    background-color: #c0392b;
+}
